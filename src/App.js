@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <h1>Aplicación de Usuarios</h1>
+        <h1>Aplicación PruebaFront</h1>
         <Routes>  {/* Cambié Switch por Routes */}
           <Route path="/create" element={<UserCreate />} />  {/* Cambié component por element */}
           <Route path="/edit/:userId" element={<UserEdit />} />  {/* Cambié component por element */}

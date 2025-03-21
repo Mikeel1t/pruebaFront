@@ -91,10 +91,13 @@ const UserEdit = () => {
               )}
             </div>
             <div className="mb-3">
-              <Field name="title" placeholder="Título" className="form-control" />
-              {touched.title && errors.title && (
-                <div className="text-danger">{errors.title}</div>
-              )}
+            <Field name="title" as="select"
+                className={`form-control ${touched.title && errors.title ? 'is-invalid' : ''}`}>
+                <option value="">Seleccionar título</option>
+                <option value="mr">Sr.</option>
+                <option value="mrs">Sra.</option>
+                <option value="dr">Dr.</option>
+            </Field>
             </div>
             <div className="mb-3">
               <Field name="picture" placeholder="URL de la imagen" className="form-control" />

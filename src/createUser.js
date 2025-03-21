@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from 'axios';//Hace peticiones como un ajax o un fetch
 
 const CreateUser = ({ fetchUsers }) => {
   const [firstName, setFirstName] = useState('');

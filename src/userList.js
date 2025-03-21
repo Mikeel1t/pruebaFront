@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Lista usuarios
 const UserList = ({ users, deleteUser, setSelectedUser }) => {
   return (
     <div className="p-6 max-w-4xl mx-auto bg-white rounded-lg shadow-lg">

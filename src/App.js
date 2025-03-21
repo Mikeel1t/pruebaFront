@@ -8,7 +8,18 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <h1>Aplicación PruebaFront</h1>
+      <header>
+        <div class="px-3 py-2 bg-dark text-white">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <h1>Aplicación de pruebaFront</h1>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+        
         <Routes>  {/* Cambié Switch por Routes */}
           <Route path="/create" element={<UserCreate />} />  {/* Cambié component por element */}
           <Route path="/edit/:userId" element={<UserEdit />} />  {/* Cambié component por element */}
